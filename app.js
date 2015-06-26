@@ -12,9 +12,11 @@ var config = require('./config'),
     passport = require('passport'),
     mongoose = require('mongoose'),
     helmet = require('helmet'),
-    csrf = require('csurf');
+    csrf = require('csurf'),
+    vhost = require('vhost');
 
 //create express app
+// var app = express();
 var app = express();
 
 //keep reference to config
@@ -88,8 +90,13 @@ app.utility.sendmail = require('./util/sendmail');
 app.utility.slugify = require('./util/slugify');
 app.utility.workflow = require('./util/workflow');
 
+var loginapp = exports.app = express();
+//vhosts
+loginapp.use(vhost('www.votebird.com', app)); // Serves top level domain via Main server app
+loginapp.use(vhost('login.votebird.com', require('./votebird.prototype/app.js').app)); // Serves login subdomain via Redirect app
+
 //listen up
-app.server.listen(app.config.port, function(){
+loginapp.server.listen(app.config.port, function(){
   //and... we're live
   console.log('Server is running on port ' + config.port);
 });

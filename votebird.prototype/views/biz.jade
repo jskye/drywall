@@ -1,0 +1,26 @@
+   doctype html
+	   html(lang='en', ng-app='polls')
+		   head
+			   meta(charset='utf-8')
+			   meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+			   title Votes
+			   link(rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css')
+			   link(rel='stylesheet' href='/stylesheets/style.css')
+			   script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js')
+			   script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-resource.min.js')
+			   script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+			   script(src='//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js')
+			   script(src='/socket.io/socket.io.js')
+			   script(src='/javascripts/app.js')
+			   script(src='/javascripts/services.js')
+			   script(src='/javascripts/controllers.js')
+			   link(rel='shortcut icon', href='assets/bbird.png', type='image/x-icon')
+		   body(ng-controller="PollListCtrl")
+			   nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+				   div.navbar-header
+					   a.navbar-brand(href='#/polls')
+					   img(src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/800px-Coca-Cola_logo.svg.png", width='50%', height='50%')
+					   <p><a href="#/polls" class="btn btn-default" role="button" style = "width: 100px; font-size: 120%; color: white; background-color: #156793; position: absolute; top: 50%; left: 50%;">Voice</a></p>
+   <p><a href="#/biz/542a38115b294bd16ea02bf0" class="btn btn-default" role="button" style = "width: 100px; font-size: 120%; color: white; background-color: #156793; position: absolute; top: 50%; left: 70%;">Biz</a></p>
+	   div.container
+				   div(ng-view)

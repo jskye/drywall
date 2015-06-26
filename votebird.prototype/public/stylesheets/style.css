@@ -1,0 +1,44 @@
+body {
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.tab-content .lead {
+	margin-top: 20px;
+}
+
+.result-table {
+	margin: 20px 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.navbar-header{
+    background-color: white;
+
+}
+
+.result-table td {
+	padding: 8px;
+}
+
+.result-table > tbody > tr > td:first-child {
+	width: 25%;
+	max-width: 300px;
+	text-align: right;
+}
+
+.navbar-inverse {
+    /*background-color: rgb(221, 221, 221);*/
+	background-color: white;
+
+    border-color: rgb(221, 221, 221);
+}
+
+.userschoicestyle{
+    background-color: #156793;
+}
+
+.lightbluestyle{
+    background-color: lightblue;
+}

@@ -51,6 +51,7 @@
     "jquery": "^2.x.x",
     "jquery.cookie": "^1.x.x",
     "moment": "^2.x.x",
-    "respond.js": "^1.x.x"
+    "respond.js": "^1.x.x",
+    "vhost": "^3.0.0"
   }
 }

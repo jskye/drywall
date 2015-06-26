@@ -1,0 +1,38 @@
+doctype html
+html(lang='en', ng-app='polls')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+		title Votes
+		link(rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css')
+		link(rel='stylesheet' href='/stylesheets/style.css')
+		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js')
+		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-resource.min.js')
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+		script(src='//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js')
+		script(src='/socket.io/socket.io.js')
+		script(src='/javascripts/app.js')
+		script(src='/javascripts/services.js')
+		script(src='/javascripts/controllers.js')
+		link(rel='shortcut icon', href='assets/votebird_logo_24.9.14.5_avatar_06.png', type='image/x-icon')
+	body(ng-controller="PollListCtrl")
+		nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+			div.navbar-header
+				a.navbar-brand(href='#/polls')
+					img(src="assets/votebird_logo.png", width='30%', height='30%')
+				<p><a href="#/favthings" class="btn btn-default" role="button" style = "width: 120px; font-size: 100%; color: white; background-color: #156793; position: absolute; top: 50%; left: 20%;">Flying</a></p>
+				<p><a href="#/favthings" class="btn btn-default" role="button" style = "width: 120px; font-size: 100%; color: white; background-color: #156793; position: absolute; top: 50%; left: 28%;">Flock</a></p>
+				<p><a href="#/favthings" class="btn btn-default" role="button" style = "width: 120px; font-size: 100%; color: white; background-color: #156793; position: absolute; top: 50%; left: 36%;">Politics</a></p>
+				<p><a href="#/favthings" class="btn btn-default" role="button" style = "width: 120px; font-size: 100%; color: white; background-color: #156793; position: absolute; top: 50%; left: 44%;">Sport</a></p>
+				<p><a href="#/favthings" class="btn btn-default" role="button" style = "width: 120px; font-size: 100%; color: white; background-color: #156793; position: absolute; top: 50%; left: 52%;">Tech</a></p>
+				<p><a href="#/favthings" class="btn btn-default" role="button" style = "width: 120px; font-size: 100%; color: white; background-color: #156793; position: absolute; top: 50%; left: 60%;">Sponsored</a></p>
+
+				<p><a href="#/biz" class="btn btn-default" role="button" style = "width: 130px; font-size: 100%; color: #34A6DE; border-color: #34A6DE; border-width: 200%; background-color: white; position: absolute; top: 50%; left: 70%;">White Label</a></p>
+
+				<p><a href="#/favthings" class="btn btn-default" role="button" style = "width: 100px; font-size: 80%; color: #34A6DE; border: none; background-color: white; position: absolute; top: 60%; left: 80%;">Profile</a></p>
+				<p><a href="#/favthings" class="btn btn-default" role="button" style = "width: 100px; font-size: 80%; color: #34A6DE; border: none; background-color: white; position: absolute; top: 60%; left: 85%;">Settings</a></p>
+				<p><a href="#/favthings" class="btn btn-default" role="button" style = "width: 100px; font-size: 80%; color: #34A6DE; border: none; background-color: white; position: absolute; top: 60%; left: 90%;">Logout</a></p>
+
+
+		div.container
+			div(ng-view)

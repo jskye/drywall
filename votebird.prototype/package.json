@@ -1,0 +1,20 @@
+{
+  "name": "poll",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.3",
+    "socket.io": "~0.9.16",
+    "jade": "*",
+    "mongoose": ">= 3.8.0"
+  },
+  "devDependencies": {
+    "express": "^3.4.3",
+    "express-stormpath": "^1.0.5",
+    "mongoose": "^3.8.16",
+    "socket.io": "^0.9.17"
+  }
+}

@@ -1,34 +1,253 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
 2 info using npm@2.0.2
 3 info using node@v0.10.32
 4 verbose node symlink /usr/local/bin/node
-5 verbose run-script [ 'prestart', 'start', 'poststart' ]
-6 info prestart Drywall@0.16.1
-7 info start Drywall@0.16.1
-8 verbose unsafe-perm in lifecycle true
-9 info Drywall@0.16.1 Failed to exec start script
-10 verbose stack Error: Drywall@0.16.1 start: `grunt`
-10 verbose stack Exit status 6
-10 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:212:16)
-10 verbose stack     at ChildProcess.emit (events.js:98:17)
-10 verbose stack     at maybeClose (child_process.js:756:16)
-10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:823:5)
-11 verbose pkgid Drywall@0.16.1
-12 verbose cwd /Users/juliusskye/votebird.drywall/drywall
-13 error Darwin 13.4.0
-14 error argv "node" "/usr/local/bin/npm" "start"
-15 error node v0.10.32
-16 error npm  v2.0.2
-17 error code ELIFECYCLE
-18 error Drywall@0.16.1 start: `grunt`
-18 error Exit status 6
-19 error Failed at the Drywall@0.16.1 start script.
-19 error This is most likely a problem with the Drywall package,
-19 error not with npm itself.
-19 error Tell the author that this fails on your system:
-19 error     grunt
-19 error You can get their info via:
-19 error     npm owner ls Drywall
-19 error There is likely additional logging output above.
-20 verbose exit [ 1, true ]
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/juliusskye/votebird.drywall/drywall',
+6 verbose install   [ 'async',
+6 verbose install     'backbone',
+6 verbose install     'bcrypt',
+6 verbose install     'body-parser',
+6 verbose install     'compression',
+6 verbose install     'connect-mongo',
+6 verbose install     'cookie-parser',
+6 verbose install     'csurf',
+6 verbose install     'emailjs',
+6 verbose install     'express',
+6 verbose install     'express-session',
+6 verbose install     'helmet',
+6 verbose install     'jade',
+6 verbose install     'method-override',
+6 verbose install     'mongoose',
+6 verbose install     'morgan',
+6 verbose install     'passport',
+6 verbose install     'passport-facebook',
+6 verbose install     'passport-github',
+6 verbose install     'passport-google-oauth',
+6 verbose install     'passport-local',
+6 verbose install     'passport-oauth',
+6 verbose install     'passport-tumblr',
+6 verbose install     'passport-twitter',
+6 verbose install     'serve-static',
+6 verbose install     'underscore',
+6 verbose install     'bootstrap',
+6 verbose install     'font-awesome',
+6 verbose install     'grunt',
+6 verbose install     'grunt-cli',
+6 verbose install     'grunt-concurrent',
+6 verbose install     'grunt-contrib-clean',
+6 verbose install     'grunt-contrib-copy',
+6 verbose install     'grunt-contrib-jshint',
+6 verbose install     'grunt-contrib-less',
+6 verbose install     'grunt-contrib-uglify',
+6 verbose install     'grunt-contrib-watch',
+6 verbose install     'grunt-newer',
+6 verbose install     'grunt-nodemon',
+6 verbose install     'html5shiv',
+6 verbose install     'jquery',
+6 verbose install     'jquery.cookie',
+6 verbose install     'moment',
+6 verbose install     'respond.js' ] ]
+7 info preinstall Drywall@0.16.2
+8 warn package.json orchestrate@0.1.2 No repository field.
+9 verbose readDependencies using package.json deps
+10 verbose already installed skipping jade@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+11 verbose already installed skipping method-override@^2.x.x /Users/juliusskye/votebird.drywall/drywall
+12 verbose already installed skipping mongoose@^4.x.x /Users/juliusskye/votebird.drywall/drywall
+13 verbose already installed skipping morgan@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+14 verbose already installed skipping passport@^0.2.x /Users/juliusskye/votebird.drywall/drywall
+15 verbose already installed skipping passport-facebook@^2.x.x /Users/juliusskye/votebird.drywall/drywall
+16 verbose already installed skipping passport-github@^0.1.x /Users/juliusskye/votebird.drywall/drywall
+17 verbose already installed skipping passport-google-oauth@^0.2.x /Users/juliusskye/votebird.drywall/drywall
+18 verbose already installed skipping passport-local@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+19 verbose already installed skipping passport-oauth@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+20 verbose already installed skipping passport-tumblr@^0.1.x /Users/juliusskye/votebird.drywall/drywall
+21 verbose already installed skipping passport-twitter@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+22 verbose already installed skipping serve-static@^1.9.x /Users/juliusskye/votebird.drywall/drywall
+23 verbose already installed skipping underscore@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+24 verbose already installed skipping bootstrap@^3.x.x /Users/juliusskye/votebird.drywall/drywall
+25 verbose already installed skipping font-awesome@^4.x.x /Users/juliusskye/votebird.drywall/drywall
+26 verbose already installed skipping grunt@^0.4.x /Users/juliusskye/votebird.drywall/drywall
+27 verbose already installed skipping grunt-cli@^0.1.13 /Users/juliusskye/votebird.drywall/drywall
+28 verbose already installed skipping grunt-concurrent@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+29 verbose already installed skipping grunt-contrib-clean@^0.6.x /Users/juliusskye/votebird.drywall/drywall
+30 verbose already installed skipping grunt-contrib-copy@^0.8.x /Users/juliusskye/votebird.drywall/drywall
+31 verbose already installed skipping grunt-contrib-jshint@^0.11.x /Users/juliusskye/votebird.drywall/drywall
+32 verbose already installed skipping grunt-contrib-less@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+33 verbose already installed skipping grunt-contrib-uglify@^0.9.x /Users/juliusskye/votebird.drywall/drywall
+34 verbose already installed skipping grunt-contrib-watch@^0.6.x /Users/juliusskye/votebird.drywall/drywall
+35 verbose already installed skipping grunt-newer@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+36 verbose already installed skipping grunt-nodemon@^0.4.x /Users/juliusskye/votebird.drywall/drywall
+37 verbose already installed skipping html5shiv@^3.x.x /Users/juliusskye/votebird.drywall/drywall
+38 verbose already installed skipping jquery@^2.x.x /Users/juliusskye/votebird.drywall/drywall
+39 verbose already installed skipping jquery.cookie@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+40 verbose already installed skipping moment@^2.x.x /Users/juliusskye/votebird.drywall/drywall
+41 verbose already installed skipping respond.js@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+42 verbose already installed skipping async@^0.9.x /Users/juliusskye/votebird.drywall/drywall
+43 verbose already installed skipping backbone@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+44 verbose already installed skipping bcrypt@^0.8.x /Users/juliusskye/votebird.drywall/drywall
+45 verbose already installed skipping body-parser@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+46 verbose already installed skipping compression@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+47 verbose already installed skipping connect-mongo@^0.8.x /Users/juliusskye/votebird.drywall/drywall
+48 verbose already installed skipping cookie-parser@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+49 verbose already installed skipping csurf@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+50 verbose already installed skipping emailjs@^0.3.x /Users/juliusskye/votebird.drywall/drywall
+51 verbose already installed skipping express@^4.12.x /Users/juliusskye/votebird.drywall/drywall
+52 verbose already installed skipping express-session@^1.x.x /Users/juliusskye/votebird.drywall/drywall
+53 verbose already installed skipping helmet@^0.7.x /Users/juliusskye/votebird.drywall/drywall
+54 silly resolved []
+55 info build /Users/juliusskye/votebird.drywall/drywall
+56 verbose linkStuff [ false, false, false, '/Users/juliusskye/votebird.drywall' ]
+57 info linkStuff Drywall@0.16.2
+58 verbose linkBins Drywall@0.16.2
+59 verbose linkMans Drywall@0.16.2
+60 verbose rebuildBundles Drywall@0.16.2
+61 verbose rebuildBundles [ '.DS_Store',
+61 verbose rebuildBundles   '.bin',
+61 verbose rebuildBundles   'async',
+61 verbose rebuildBundles   'backbone',
+61 verbose rebuildBundles   'bcrypt',
+61 verbose rebuildBundles   'body-parser',
+61 verbose rebuildBundles   'bootstrap',
+61 verbose rebuildBundles   'compression',
+61 verbose rebuildBundles   'connect-mongo',
+61 verbose rebuildBundles   'cookie-parser',
+61 verbose rebuildBundles   'csurf',
+61 verbose rebuildBundles   'emailjs',
+61 verbose rebuildBundles   'express',
+61 verbose rebuildBundles   'express-handlebars',
+61 verbose rebuildBundles   'express-session',
+61 verbose rebuildBundles   'express-stormpath',
+61 verbose rebuildBundles   'express3-handlebars',
+61 verbose rebuildBundles   'font-awesome',
+61 verbose rebuildBundles   'grunt',
+61 verbose rebuildBundles   'grunt-cli',
+61 verbose rebuildBundles   'grunt-concurrent',
+61 verbose rebuildBundles   'grunt-contrib-clean',
+61 verbose rebuildBundles   'grunt-contrib-copy',
+61 verbose rebuildBundles   'grunt-contrib-jshint',
+61 verbose rebuildBundles   'grunt-contrib-less',
+61 verbose rebuildBundles   'grunt-contrib-uglify',
+61 verbose rebuildBundles   'grunt-contrib-watch',
+61 verbose rebuildBundles   'grunt-newer',
+61 verbose rebuildBundles   'grunt-nodemon',
+61 verbose rebuildBundles   'helmet',
+61 verbose rebuildBundles   'html5shiv',
+61 verbose rebuildBundles   'jade',
+61 verbose rebuildBundles   'jquery',
+61 verbose rebuildBundles   'jquery.cookie',
+61 verbose rebuildBundles   'less',
+61 verbose rebuildBundles   'method-override',
+61 verbose rebuildBundles   'moment',
+61 verbose rebuildBundles   'mongoose',
+61 verbose rebuildBundles   'morgan',
+61 verbose rebuildBundles   'orchestrate',
+61 verbose rebuildBundles   'passport',
+61 verbose rebuildBundles   'passport-facebook',
+61 verbose rebuildBundles   'passport-github',
+61 verbose rebuildBundles   'passport-google',
+61 verbose rebuildBundles   'passport-google-oauth',
+61 verbose rebuildBundles   'passport-local',
+61 verbose rebuildBundles   'passport-oauth',
+61 verbose rebuildBundles   'passport-tumblr',
+61 verbose rebuildBundles   'passport-twitter',
+61 verbose rebuildBundles   'q',
+61 verbose rebuildBundles   'respond.js',
+61 verbose rebuildBundles   'serve-static',
+61 verbose rebuildBundles   'socket.io',
+61 verbose rebuildBundles   'underscore' ]
+62 verbose rebuild bundle /Users/juliusskye/votebird.drywall/drywall/node_modules/express-handlebars
+63 info build /Users/juliusskye/votebird.drywall/drywall/node_modules/express-handlebars
+64 info preinstall express-handlebars@1.1.0
+65 verbose linkStuff [ false,
+65 verbose linkStuff   false,
+65 verbose linkStuff   false,
+65 verbose linkStuff   '/Users/juliusskye/votebird.drywall/drywall/node_modules' ]
+66 info linkStuff express-handlebars@1.1.0
+67 verbose linkBins express-handlebars@1.1.0
+68 verbose linkMans express-handlebars@1.1.0
+69 verbose rebuildBundles express-handlebars@1.1.0
+70 verbose rebuildBundles [ '.bin', 'glob', 'graceful-fs', 'handlebars', 'promise', 'semver' ]
+71 info install express-handlebars@1.1.0
+72 info postinstall express-handlebars@1.1.0
+73 verbose rebuild bundle /Users/juliusskye/votebird.drywall/drywall/node_modules/express-stormpath
+74 info build /Users/juliusskye/votebird.drywall/drywall/node_modules/express-stormpath
+75 info preinstall express-stormpath@1.0.5
+76 verbose linkStuff [ false,
+76 verbose linkStuff   false,
+76 verbose linkStuff   false,
+76 verbose linkStuff   '/Users/juliusskye/votebird.drywall/drywall/node_modules' ]
+77 info linkStuff express-stormpath@1.0.5
+78 verbose linkBins express-stormpath@1.0.5
+79 verbose linkMans express-stormpath@1.0.5
+80 verbose rebuildBundles express-stormpath@1.0.5
+81 verbose rebuildBundles [ '.bin',
+81 verbose rebuildBundles   'async',
+81 verbose rebuildBundles   'body-parser',
+81 verbose rebuildBundles   'client-sessions',
+81 verbose rebuildBundles   'cookie-parser',
+81 verbose rebuildBundles   'csurf',
+81 verbose rebuildBundles   'express',
+81 verbose rebuildBundles   'forms',
+81 verbose rebuildBundles   'jade',
+81 verbose rebuildBundles   'stormpath',
+81 verbose rebuildBundles   'utils-merge',
+81 verbose rebuildBundles   'winston' ]
+82 info install express-stormpath@1.0.5
+83 info postinstall express-stormpath@1.0.5
+84 verbose rebuild bundle /Users/juliusskye/votebird.drywall/drywall/node_modules/express3-handlebars
+85 info build /Users/juliusskye/votebird.drywall/drywall/node_modules/express3-handlebars
+86 info preinstall express3-handlebars@0.5.2
+87 verbose linkStuff [ false,
+87 verbose linkStuff   false,
+87 verbose linkStuff   false,
+87 verbose linkStuff   '/Users/juliusskye/votebird.drywall/drywall/node_modules' ]
+88 info linkStuff express3-handlebars@0.5.2
+89 verbose linkBins express3-handlebars@0.5.2
+90 verbose linkMans express3-handlebars@0.5.2
+91 verbose rebuildBundles express3-handlebars@0.5.2
+92 verbose rebuildBundles [ '.bin', 'async', 'glob', 'handlebars', 'semver' ]
+93 info install express3-handlebars@0.5.2
+94 info postinstall express3-handlebars@0.5.2
+95 verbose rebuild bundle /Users/juliusskye/votebird.drywall/drywall/node_modules/less
+96 info build /Users/juliusskye/votebird.drywall/drywall/node_modules/less
+97 info preinstall less@2.5.1
+98 verbose linkStuff [ false,
+98 verbose linkStuff   false,
+98 verbose linkStuff   false,
+98 verbose linkStuff   '/Users/juliusskye/votebird.drywall/drywall/node_modules' ]
+99 info linkStuff less@2.5.1
+100 verbose linkBins less@2.5.1
+101 verbose link bins [ { lessc: './bin/lessc' },
+101 verbose link bins   '/Users/juliusskye/votebird.drywall/drywall/node_modules/.bin',
+101 verbose link bins   false ]
+102 verbose linkMans less@2.5.1
+103 verbose rebuildBundles less@2.5.1
+104 verbose rebuildBundles [ '.bin',
+104 verbose rebuildBundles   'errno',
+104 verbose rebuildBundles   'graceful-fs',
+104 verbose rebuildBundles   'image-size',
+104 verbose rebuildBundles   'mime',
+104 verbose rebuildBundles   'mkdirp',
+104 verbose rebuildBundles   'promise',
+104 verbose rebuildBundles   'request',
+104 verbose rebuildBundles   'source-map' ]
+105 verbose gentlyRm vacuuming /Users/juliusskye/votebird.drywall/drywall/node_modules/.bin/lessc
+106 silly gentlyRm purging /Users/juliusskye/votebird.drywall/drywall/node_modules/.bin/lessc
+107 verbose stack Error: EACCES, unlink '/Users/juliusskye/votebird.drywall/drywall/node_modules/.bin/lessc'
+108 verbose cwd /Users/juliusskye/votebird.drywall/drywall
+109 error Darwin 13.4.0
+110 error argv "node" "/usr/local/bin/npm" "install"
+111 error node v0.10.32
+112 error npm  v2.0.2
+113 error path /Users/juliusskye/votebird.drywall/drywall/node_modules/.bin/lessc
+114 error code EACCES
+115 error errno 3
+116 error Error: EACCES, unlink '/Users/juliusskye/votebird.drywall/drywall/node_modules/.bin/lessc'
+116 error  { [Error: EACCES, unlink '/Users/juliusskye/votebird.drywall/drywall/node_modules/.bin/lessc']
+116 error   errno: 3,
+116 error   code: 'EACCES',
+116 error   path: '/Users/juliusskye/votebird.drywall/drywall/node_modules/.bin/lessc' }
+117 error Please try running this command again as root/Administrator.
+118 verbose exit [ 3, true ]
