@@ -93,7 +93,7 @@ app.utility.workflow = require('./util/workflow');
 var loginapp = exports.app = express();
 //vhosts
 loginapp.use(vhost('www.votebird.com', app)); // Serves top level domain via Main server app
-loginapp.use(vhost('login.votebird.com', require('./votebird.prototype/app.js').app)); // Serves login subdomain via Redirect app
+loginapp.use(vhost('login.votebird.com', require('./pollsapp/app.js').app)); // Serves login subdomain via Redirect app
 
 //listen up
 loginapp.server.listen(app.config.port, function(){
